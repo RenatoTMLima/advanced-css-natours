@@ -1,17 +1,21 @@
 {
+  "homepage": "https://RenatoTMLima.github.io/advanced-css-natours",
   "name": "advanced-css-natours",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cmp:w": "sass sass/main.scss css/style.css -w",
-    "serve": "lite-server",
-    "dev": "npm-run-all --parallel cmp:w serve"
+    "cmp:w": "sass src/sass/main.scss src/css/style.css -w",
+    "serve": "lite-server --baseDir=\"src\"",
+    "dev": "npm-run-all --parallel cmp:w serve",
+    "predeploy": "sass src/sass/main.scss src/css/style.css",
+    "deploy": "gh-pages -d src" 
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "lite-server": "^2.6.1",
     "npm-run-all": "^4.1.5",
     "sass": "^1.84.0"
