@@ -35,8 +35,8 @@ jobs:
         run: pnpm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          publishDir: ./src # Or the directory where your build output is located (e.g., dist, public)
-          force: true # Optional: Force push changes
+          publishDir: ./src
+          force: true
