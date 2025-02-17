@@ -8,6 +8,7 @@
     "cmp:w": "sass src/sass/main.scss src/css/style.css -w",
     "serve": "lite-server --baseDir=\"src\"",
     "dev": "npm-run-all --parallel cmp:w serve",
+    "build": "sass src/sass/main.scss src/css/style.css",
     "predeploy": "sass src/sass/main.scss src/css/style.css",
     "deploy": "gh-pages -d src" 
   },
