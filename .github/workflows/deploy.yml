@@ -25,7 +25,7 @@ jobs:
           cache-dependency-path: "package.json"
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile # Recommended: Use --frozen-lockfile for consistency
+        run: pnpm install
 
       - name: Build project
         run: pnpm run build
