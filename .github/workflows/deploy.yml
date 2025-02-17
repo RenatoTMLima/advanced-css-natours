@@ -38,7 +38,7 @@ jobs:
         run: ls -l ./
 
       - name: List files in ./public directory
-        run: ls -l ./public #  <-- Assuming ./public is a likely output directory
+        run: ls -l ./src #  <-- Assuming ./public is a likely output directory
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
