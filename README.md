@@ -1,6 +1,6 @@
 # Natours
 
-[![Natours Website Banner](https://github.com/RenatoTMLima/advanced-css-natours/blob/gh-pages/img/hero.jpg)](https://renatotmlima.github.io/advanced-css-natours/)
+[![Natours Website Banner](https://github.com/RenatoTMLima/advanced-css-natours/blob/gh-pages/img/banner.png)](https://renatotmlima.github.io/advanced-css-natours/)
 
 [**Visit the Live Demo &rarr;**](https://renatotmlima.github.io/advanced-css-natours/)
 
