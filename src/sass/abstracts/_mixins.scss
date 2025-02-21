@@ -1,3 +1,4 @@
+// #REF: to fix parent elements collapse due to children floating
 @mixin clearfix {
   &::after {
     content: "";
