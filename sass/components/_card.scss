@@ -1,5 +1,6 @@
 .card {
   // FUNCTIONALITY
+  // #REF: These perspectives are there to create a more reliable 3d effect when the card rotates. It must be in the parent of the element that will rotate
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
@@ -13,6 +14,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    // #REF: important prop to make sure the element when rotated will not have the content visible
     backface-visibility: hidden;
     border-radius: 0.3rem;
     overflow: hidden;
@@ -23,6 +25,7 @@
     }
 
     &--back {
+      // #REF: the back side of the card must be already rotated when the card is in normal state
       transform: rotateY(180deg);
 
       &-primary {
@@ -51,6 +54,7 @@
     }
   }
 
+  // #REF: transform rotateY does the flip effect
   &:hover &__side--front {
     transform: rotateY(-180deg);
   }
