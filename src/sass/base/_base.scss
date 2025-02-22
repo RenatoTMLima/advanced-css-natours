@@ -9,7 +9,19 @@
 
 // #REF: This defines 1rem = 10px in a default browser settings
 html {
-  font-size: 62.5%;
+  font-size: 75%;
+
+  @include respond(bdesk) {
+    font-size: 62.5%; // 1rem = 12px
+  }
+
+  @include respond(tland) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include respond(tport) {
+    font-size: 50%; // 1rem = 8px
+  }
 }
 
 body {
