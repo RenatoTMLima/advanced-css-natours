@@ -15,6 +15,7 @@
     left: 0;
     width: 100%;
     // #REF: important prop to make sure the element when rotated will not have the content visible
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 0.3rem;
     overflow: hidden;
